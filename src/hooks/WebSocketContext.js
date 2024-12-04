@@ -7,7 +7,7 @@ export const WebSocketProvider = ({ children }) => {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    const newSocket = io("ws://https://xetai-be.vercel.app");
+    const newSocket = io("wss://xetai-be.vercel.app");
     newSocket.on("connect", () => {
       console.log("Connected to socket server");
       setSocket(newSocket);
