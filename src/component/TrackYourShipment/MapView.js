@@ -109,7 +109,7 @@ const MapView = ({ startLocation, endLocation, orderCode }) => {
   }, [socket]);
 
   useEffect(() => {
-    const socketInstance = io("ws://https://xetai-be.vercel.app/");
+    const socketInstance = io("wss://xetai-be.vercel.app/");
     setSocket(socketInstance);
 
     socketInstance.on("connect", () => {

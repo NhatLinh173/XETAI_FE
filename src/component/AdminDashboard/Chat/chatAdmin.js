@@ -24,14 +24,14 @@ const ChatAdmin = () => {
     const fetchUserPhone = async (userId) => {
       try {
         const response = await axios.get(
-          `http://https://xetai-be.vercel.app/auth/user/${userId}`
+          `https://xetai-be.vercel.app/auth/user/${userId}`
         );
         const user = response.data;
         setUserPhone(user.phone);
         setReceiverId(user._id);
         setReceiver(user);
         const conversationResponse = await axios.post(
-          `http://https://xetai-be.vercel.app/conversation`,
+          `https://xetai-be.vercel.app/conversation`,
           {
             senderId,
             receiverId: user._id,
@@ -126,7 +126,7 @@ const ChatAdmin = () => {
     const fetchChatUsers = async () => {
       try {
         const response = await axios.get(
-          `http://https://xetai-be.vercel.app/conversation?userId=${senderId}`
+          `https://xetai-be.vercel.app/conversation?userId=${senderId}`
         );
         const users = response.data.filter(
           (user) => user.participant && user.participant._id
@@ -194,7 +194,7 @@ const ChatAdmin = () => {
   const searchUser = async (term) => {
     try {
       const response = await axios.get(
-        `http://https://xetai-be.vercel.app/auth/search?phone=${term}`
+        `https://xetai-be.vercel.app/auth/search?phone=${term}`
       );
       const users = Array.isArray(response.data) ? response.data : [];
       setSearchResults(users);
@@ -213,7 +213,7 @@ const ChatAdmin = () => {
 
     try {
       const response = await axios.post(
-        `http://https://xetai-be.vercel.app/conversation`,
+        `https://xetai-be.vercel.app/conversation`,
         {
           senderId,
           receiverId: user._id.toString(),

@@ -11,9 +11,7 @@ const BlogHome = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await axios.get(
-          "http://https://xetai-be.vercel.app/blog"
-        );
+        const response = await axios.get("https://xetai-be.vercel.app/blog");
 
         const processedData = response.data.map((data) => {
           const dateObj = new Date(data.createdAt);

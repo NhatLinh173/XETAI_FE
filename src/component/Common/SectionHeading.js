@@ -51,7 +51,7 @@ const SectionHeading = ({ onSearch }) => {
       if (!pickupLocation && !dropoffLocation && !weight) {
         try {
           const response = await axios.get(
-            "http://https://xetai-be.vercel.app/posts/"
+            "https://xetai-be.vercel.app/posts/"
           );
           console.log("Response from /posts:", response.data);
           onSearch(response.data.salePosts || []);
@@ -62,16 +62,13 @@ const SectionHeading = ({ onSearch }) => {
       }
 
       try {
-        const response = await axios.get(
-          "http://https://xetai-be.vercel.app/search",
-          {
-            params: {
-              startPointCity: pickupLocation,
-              destinationCity: dropoffLocation,
-              load: weight,
-            },
-          }
-        );
+        const response = await axios.get("https://xetai-be.vercel.app/search", {
+          params: {
+            startPointCity: pickupLocation,
+            destinationCity: dropoffLocation,
+            load: weight,
+          },
+        });
         console.log("Response from /search:", response.data);
         onSearch(response.data.posts);
       } catch (error) {
@@ -82,7 +79,7 @@ const SectionHeading = ({ onSearch }) => {
       if (!pickupLocation && !dropoffLocation) {
         try {
           const response = await axios.get(
-            "http://https://xetai-be.vercel.app/driverpost/"
+            "https://xetai-be.vercel.app/driverpost/"
           );
           console.log("Response from /driverpost:", response.data);
           onSearch(response.data || []);
@@ -95,7 +92,7 @@ const SectionHeading = ({ onSearch }) => {
 
       try {
         const response = await axios.get(
-          "http://https://xetai-be.vercel.app/search/driver-post",
+          "https://xetai-be.vercel.app/search/driver-post",
           {
             params: {
               startCity: pickupLocation,

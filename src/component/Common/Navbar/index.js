@@ -29,7 +29,7 @@ const Navbar = ({ openModal }) => {
   const history = useHistory();
 
   useEffect(() => {
-    const socket = io("http://https://xetai-be.vercel.app", {
+    const socket = io("wss://xetai-be.vercel.app", {
       withCredentials: true,
     });
 

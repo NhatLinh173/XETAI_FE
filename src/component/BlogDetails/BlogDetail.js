@@ -10,7 +10,7 @@ const BlogDetail = () => {
     const fetchBlogDetail = async () => {
       try {
         const response = await axios.get(
-          `http://https://xetai-be.vercel.app/blog/${id}`
+          `https://xetai-be.vercel.app/blog/${id}`
         );
         setBlogDetail(response.data);
         console.log(response.data);
@@ -27,9 +27,7 @@ const BlogDetail = () => {
   useEffect(() => {
     const fetchDataBlog = async () => {
       try {
-        const response = await axios.get(
-          "http://https://xetai-be.vercel.app/blog"
-        );
+        const response = await axios.get("https://xetai-be.vercel.app/blog");
         setBlogData(response.data);
       } catch (error) {
         console.error("Error fetching blog data:", error);

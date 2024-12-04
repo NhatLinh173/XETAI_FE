@@ -87,7 +87,7 @@ const AdminProfile = () => {
           }
         }
         const res = await axiosInstance.put(
-          `http://https://xetai-be.vercel.app/auth/update-user/${userId}`,
+          `https://xetai-be.vercel.app/auth/update-user/${userId}`,
           {
             fullName: fullNameStaff,
             email: emailStaff,

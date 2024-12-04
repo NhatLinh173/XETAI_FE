@@ -81,7 +81,7 @@ const DriverManagement = () => {
   const unlockDriverAccount = async (id) => {
     try {
       const response = await axios.put(
-        `http://https://xetai-be.vercel.app/auth/user/${id}/unlock`
+        `https://xetai-be.vercel.app/auth/user/${id}/unlock`
       );
       if (response.status === 200) {
         console.log(response);
@@ -102,7 +102,7 @@ const DriverManagement = () => {
   const lockDriverAccount = async (id, duration) => {
     try {
       const response = await axios.put(
-        `http://https://xetai-be.vercel.app/auth/user/${id}/block`,
+        `https://xetai-be.vercel.app/auth/user/${id}/block`,
         {
           duration: duration,
         }
