@@ -1,0 +1,159 @@
+
+.card {
+  min-height: 400px; 
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  border-color: red;
+}
+
+
+.card-body {
+  text-align: center;
+  padding: 20px;
+}
+
+.icon {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.card-text {
+  margin-bottom: 20px;
+}
+
+.card-body ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.card-body ul li {
+  position: relative;
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+.card-body ul li:before {
+  content: "-";
+  color: blue;
+  position: absolute;
+  left: 0;
+}
+
+
+/* .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} */
+
+.list-unstyled {
+  padding: 0; 
+  list-style: none; 
+}
+
+.list-unstyled li {
+  display: block; 
+  text-align: left; 
+  margin-bottom: 10px; 
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px; /* Chừa không gian cho icon mắt */
+  margin-bottom: 5px; /* Duy trì khoảng cách giữa input và lỗi */
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; 
+}
+
+/* Style for individual input fields */
+.full-name-input {
+  border-color: #4CAF50; /* Custom color for name field */
+}
+
+.email-input {
+  border-color: #2196F3; /* Custom color for email field */
+}
+
+.phone-input {
+  border-color: #FF9800; /* Custom color for phone field */
+}
+
+.password-input {
+  border-color: #f44336; /* Custom color for password field */
+}
+
+.confirm-password-input {
+  border-color: #9c27b0; /* Custom color for confirm password field */
+}
+
+
+.error-text {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  position: absolute; /* Đảm bảo thông báo lỗi xuất hiện tuyệt đối với các phần tử khác */
+  bottom: -20px; /* Đặt thông báo lỗi cách bên dưới input một khoảng thích hợp */
+  left: 0; 
+}
+
+.password-group, .confirm-password-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+
+.full-name-error {
+  color: #ff1744;
+}
+
+.email-error {
+  color: #ff1744;
+}
+
+.phone-error {
+  color: #ff1744;
+}
+
+.password-error {
+  color: #ff1744;
+}
+
+.confirm-password-error {
+  color: #ff1744;
+}
+
+.full-name-group, .email-group, .phone-group, .password-group, .confirm-password-group {
+  margin-bottom: 20px;
+  position: relative; 
+}
+
+.password-field-wrapper {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%; /* Căn giữa theo chiều dọc */
+  right: 20px; /* Căn phải */
+  transform: translateY(-50%); /* Đảm bảo icon luôn căn giữa chính xác */
+  cursor: pointer;
+  color: #555;
+}
+

@@ -1,0 +1,87 @@
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+.modal-content {
+  position: fixed !important ;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  background: white !important;
+  padding: 20px !important;
+  border-radius: 8px !important;
+  z-index: 1001 !important;
+  max-width: 500px   ;
+  width: 100% !important;
+  }
+  
+  .modal-header {
+    position: relative; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .close-btn {
+    position: absolute; 
+    right: 10px; 
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .modal-body {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .icon {
+    font-size: 2.5rem !important;
+    margin-bottom: 10px;
+  }
+  
+  .text {
+    font-size: 1.2rem;
+  }
+  
+  .modal-footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .accept-btn,
+  .decline-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .accept-btn {
+    background-color: orange;
+    color: white;
+  }
+  
+  .decline-btn {
+    background-color: #ddd;
+    color: black;
+  }
+  

@@ -1,0 +1,55 @@
+.modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 1050; /* Ensure it's on top of other elements */
+    position: fixed; /* Ensure modal stays in place */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .modal-dialog {
+    max-width: 500px;
+    width: 100%; /* Ensure modal takes full width as needed */
+  }
+  
+  .modal-content {
+    padding: 20px;
+    background-color: #fff; /* Ensure proper background */
+    border-radius: 5px; /* Optional: for rounded corners */
+  }
+  
+  .modal-header, .modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .modal-body {
+    margin: 15px 0;
+  }
+  
+  .modal input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+  }
+
+  .bank-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .bank-logo {
+    width: 30px; 
+    height: 30px; 
+    margin-right: 10px; 
+  }
+  
+  .bank-name {
+    flex: 1;
+  }

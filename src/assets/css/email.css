@@ -1,0 +1,43 @@
+.email-container {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #333;
+  }
+  
+  .email-title {
+    color: #0073e6;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .email-greeting {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .email-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .email-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .email-footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #888;
+  }
+  

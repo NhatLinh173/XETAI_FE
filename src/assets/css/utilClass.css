@@ -1,0 +1,141 @@
+/* FONT SIZE */
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+/*  */
+
+/* FONT WEIGHT */
+.fw-600 {
+  font-weight: 600;
+}
+/*  */
+
+/* ROUNDED */
+.rounded-12 {
+  border-radius: 12px;
+}
+/*  */
+
+/* CURSOR */
+.cursor-pointer {
+  cursor: pointer;
+}
+/*  */
+
+/* BADGE */
+.status-badge {
+  display: inline-block;
+  width: fit-content;
+  border-radius: 100px;
+  padding: 4px 8px;
+  color: black;
+}
+
+.status-wait {
+  background-color: #fff3cd; /* Light yellow for waiting */
+}
+
+.status-approve {
+  background-color: #d4edda; /* Light green for approved */
+}
+
+.status-inprogress {
+  background-color: #cce5ff; /* Light blue for in progress */
+}
+
+.status-finish {
+  background-color: #c3e6cb; /* Lighter green for finished */
+}
+
+.status-cancel {
+  background-color: #f8d7da; /* Light red for canceled */
+}
+
+.status-hide {
+  background-color: #fefefe; /* Light gray for hidden */
+}
+/*  */
+
+/* SIZING */
+.w-full {
+  width: 100%;
+}
+/*  */
+
+/* QUOTE */
+.quote-error {
+  background-color: rgba(255, 208, 205, 0.2);
+  border-left: 8px solid #ffd0cd;
+  border-radius: 8px;
+  padding: 16px 24px;
+}
+/*  */
+
+/* GAP */
+.gap-3 {
+  gap: 12px;
+}
+
+/* CENTER */
+.absolute-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.link-wrapper:hover {
+  color: var(--heading-color);
+}
+
+.item-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.item-card:hover a div div div.total-amount {
+  color: var(--main-theme-color);
+}
+
+label.required::after {
+  content: " *";
+  color: var(--main-theme-color);
+}
+
+.custom-input-file {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.custom-input-file label {
+  position: absolute;
+  height: 30px;
+  left: 6px;
+  margin: 0;
+}
+
+.custom-input-file input[type="text"] {
+  padding-left: 110px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
