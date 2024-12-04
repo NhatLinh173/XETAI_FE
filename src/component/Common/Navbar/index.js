@@ -29,7 +29,9 @@ const Navbar = ({ openModal }) => {
   const history = useHistory();
 
   useEffect(() => {
-    const socket = io("http://localhost:3005", { withCredentials: true });
+    const socket = io("http://https://xetai-be.vercel.app", {
+      withCredentials: true,
+    });
 
     const userId = localStorage.getItem("userId");
     if (userId) {
@@ -53,7 +55,7 @@ const Navbar = ({ openModal }) => {
     const fetchNotifications = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3005/notifications/${localStorage.getItem(
+          `http://https://xetai-be.vercel.app/notifications/${localStorage.getItem(
             "userId"
           )}`
         );

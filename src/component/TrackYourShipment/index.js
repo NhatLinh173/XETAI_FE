@@ -24,7 +24,7 @@ const TrackShipment = () => {
     try {
       setError("");
       const response = await axios.get(
-        `http://localhost:3005/tracking/driver-location/${orderCode}`
+        `http://https://xetai-be.vercel.app/tracking/driver-location/${orderCode}`
       );
 
       const { startPoint, destination, startPointCity, destinationCity } =

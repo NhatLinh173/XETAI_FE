@@ -14,7 +14,9 @@ const ServicesCard = () => {
   useEffect(() => {
     const getDataPost = async () => {
       try {
-        const response = await axios.get("http://localhost:3005/posts/");
+        const response = await axios.get(
+          "http://https://xetai-be.vercel.app/posts/"
+        );
         setDataPost(response.data.salePosts || []);
         setFilteredData(response.data.salePosts || []);
       } catch (error) {

@@ -27,7 +27,7 @@ const ResetPassword = () => {
     setLoading(true);
     try {
       const response = await axios.post(
-        "http://localhost:3005/auth/resetPassword",
+        "http://https://xetai-be.vercel.app/auth/resetPassword",
         { email, newPassword }
       );
       toast.success("Mật khẩu đã được thay đổi thành công!");

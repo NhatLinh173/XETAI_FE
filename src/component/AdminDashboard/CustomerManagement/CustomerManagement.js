@@ -69,7 +69,7 @@ const CustomerManagement = () => {
   const lockUserAccount = async (id, duration) => {
     try {
       const response = await axios.put(
-        `http://localhost:3005/auth/user/${id}/block`,
+        `http://https://xetai-be.vercel.app/auth/user/${id}/block`,
         {
           duration: duration,
         }
@@ -98,7 +98,7 @@ const CustomerManagement = () => {
   const unlockDriverAccount = async (id) => {
     try {
       const response = await axios.put(
-        `http://localhost:3005/auth/user/${id}/unlock`
+        `http://https://xetai-be.vercel.app/auth/user/${id}/unlock`
       );
       if (response.status === 200) {
         setCustomers(

@@ -22,7 +22,9 @@ const BlogDetailsArea = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3005/blog");
+        const response = await axios.get(
+          "http://https://xetai-be.vercel.app/blog"
+        );
         setBlogData(response.data);
       } catch (error) {
         console.error("Error fetching data", error);

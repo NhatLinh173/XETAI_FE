@@ -18,7 +18,7 @@ const useAuth = () => {
   const handleLogin = async (identifier, password) => {
     try {
       const { data } = await axios.post(
-        "http://localhost:3005/auth/login",
+        "http://https://xetai-be.vercel.app/auth/login",
         {
           identifier,
           password,

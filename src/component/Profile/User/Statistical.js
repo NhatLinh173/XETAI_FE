@@ -49,7 +49,7 @@ const Statistical = ({ driverId }) => {
     try {
       const mappedRange = timeRangeMapping[range] || range;
       const response = await axios.get(
-        `http://localhost:3005/driver/${driverId}/statistics?range=${range}`
+        `http://https://xetai-be.vercel.app/driver/${driverId}/statistics?range=${range}`
       );
       const data = response.data;
       setStatistics({
